@@ -38,10 +38,13 @@ public class App
         System.out.println(e1);
         
         EmployeeCrud ecrud = new EmployeeCrud();
+        ecrud.addMultipleEmployee(session);
         //ecrud.add(session);
-        ecrud.readAll(session);
+        //ecrud.readAll(session);
+        
         
 		
         session.getTransaction().commit();
+        System.out.println("Process is done.");
     }
 }

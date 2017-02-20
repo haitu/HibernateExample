@@ -27,4 +27,19 @@ public class EmployeeCrud {
 			
 		}
 	}
+	public void addMultipleEmployee(Session session)
+	{
+		int start = 100;
+		for(int i = 0;i < 1000;i ++)
+		{
+			int num = start + i;
+			Employee epl = new Employee();
+			epl.setFirstName("phuong " + num);
+			epl.setLastName("tran " + num);
+			epl.setSalary(100 + num);
+			session.save(epl);
+			
+		}
+		
+	}
 }
