@@ -2,6 +2,7 @@ package com.mkyong.common;
 
 import hai.Employee;
 import hai.EmployeeCrud;
+import hai.ShowroomCrud;
 
 import java.util.List;
 
@@ -38,11 +39,12 @@ public class App
         System.out.println(e1);
         
         EmployeeCrud ecrud = new EmployeeCrud();
-        ecrud.addMultipleEmployee(session);
+        //ecrud.addMultipleEmployee(session);
         //ecrud.add(session);
         //ecrud.readAll(session);
         
-        
+        ShowroomCrud src = new ShowroomCrud();
+        src.add(session);
 		
         session.getTransaction().commit();
         System.out.println("Process is done.");

@@ -12,5 +12,8 @@
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <mapping resource="com/mkyong/common/Stock.hbm.xml"></mapping>
         <mapping class="hai.Employee"/>
+        
+        <mapping class="hai.Showroom"/>
+        <mapping class="hai.Car"/>
     </session-factory>
 </hibernate-configuration>
